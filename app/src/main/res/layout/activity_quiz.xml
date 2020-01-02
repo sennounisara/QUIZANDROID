@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+    
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        app:SpinKit_Color="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question Number 1"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+
+        android:id="@+id/questionNumber"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What language has the most words?"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:id="@+id/question"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioG"
+            android:gravity="center_vertical"
+           >
+            <RadioButton
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"/>
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mandarin Chinese "/>
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hindustani"/>
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Russian"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dp">
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="Prev"
+            />
+        <Button
+            android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="Answer"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="Next"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
